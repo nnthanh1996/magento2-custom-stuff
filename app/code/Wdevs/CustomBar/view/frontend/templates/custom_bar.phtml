@@ -1,0 +1,18 @@
+<?php /** @var \Wdevs\CustomBar\Block\CustomBar $block */ ?>
+<script type="text/x-magento-init">
+    {
+        "*" : {
+            "Magento_Ui/js/core/app": {
+                "components" : {
+                    "custom-bar" : {
+                        "component" : "Wdevs_CustomBar/js/customBar",
+                        "template" : "Wdevs_CustomBar/custom-bar"
+                    }
+                }
+            }
+        }
+    }
+</script>
+<div id="custom-bar" data-bind="scope: 'custom-bar'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>

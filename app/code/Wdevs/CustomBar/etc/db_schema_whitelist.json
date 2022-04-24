@@ -1,0 +1,13 @@
+{
+    "customer_group": {
+        "column": {
+            "customer_group_id": true,
+            "customer_group_code": true,
+            "tax_class_id": true,
+            "custom_message": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

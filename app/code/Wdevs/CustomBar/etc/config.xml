@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer>
+            <customer_group_configuration>
+                <enable_custom_bar>0</enable_custom_bar>
+            </customer_group_configuration>
+        </customer>
+    </default>
+</config>
