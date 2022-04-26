@@ -111,15 +111,17 @@ class FormPlugin
             $this->_backendSession->setCustomerGroupData(null);
         } else {
 
-            $form->addValues(
-                [
-                    'id' => $customerGroup->getId(),
-                    'customer_group_code' => $customerGroup->getCode(),
-                    'tax_class_id' => $defaultCustomerTaxClass,
-                    'customer_group_excluded_website_ids' => $customerGroupExcludedWebsites,
-                    'custom_message' => $customerGroup->getData('custom_message')
-                ]
-            );
+            if($customerGroup->getId()) {
+                $form->addValues(
+                    [
+                        'id' => $customerGroup->getId(),
+                        'customer_group_code' => $customerGroup->getCode(),
+                        'tax_class_id' => $defaultCustomerTaxClass,
+                        'customer_group_excluded_website_ids' => $customerGroupExcludedWebsites,
+                        'custom_message' => $customerGroup->getData('custom_message')
+                    ]
+                );
+            }
         }
 
     }

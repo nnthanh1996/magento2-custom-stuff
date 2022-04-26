@@ -1,5 +1,4 @@
 # Wdevs CustomBar module
-This module has built with Magento CE 2.4.3-p1 <br>
 Configuration:
 1. We can enable or disable it in STORES > Configuration > CUSTOMERS > Customer Configuration > Customer Group Configuration > Enable Custom Bar.
 <br>
